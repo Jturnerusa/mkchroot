@@ -1,0 +1,11 @@
+* mkchroot
+A utility to make chroots that are tightly integrated with the host system, similar
+to distrobox.
+
+* Differences from distrobox
+~mkchroot~ does not use podman or any container management software. Instead it uses ~bwrap~
+directly to create the "container".
+
+~mkchroot~ also currently requires running as root, to avoid dealing with userns mapping issues.
+
+A lot of features of distrobox are probably not yet implemented, and this is very much a work in progress that I will work on as I or others use it.
